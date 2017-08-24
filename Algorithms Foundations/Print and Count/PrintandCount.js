@@ -24,4 +24,4 @@ if(max == undefined){
   console.log('there were '+count+' numbers in the range of '+min+' and '+max);
 }
 
-printNCount()
+printNCount(512,4096)
