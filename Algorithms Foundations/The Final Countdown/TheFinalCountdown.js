@@ -6,7 +6,7 @@
 // One exception: if a multiple is equal to param4, then skip (don’t print) that one. Do this using a WHILE loop.
 //
 // Example: Given (3,5,17,9), print 6,12,15 (which are all of the multiples of 3 between 5 and 17,
-// except for the value 9).
+// except for the value 9)
 
 function finalCountdown(multiples,start,end,skip){
 
