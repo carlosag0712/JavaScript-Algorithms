@@ -17,9 +17,7 @@ var multnum = start;
     if(multnum%multiples==0&&multnum!=skip){
       console.log(multnum);
     }
-
   }
-
 }
 
 finalCountdown(3,5,17,9)
