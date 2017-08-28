@@ -1,24 +1,29 @@
-// Values Greater than Second
-// For [1,3,5,7,9,13], print values that are greater than its 2nd value. Return how many values this is.
+// Values Greater than Second, Generalized
+// Write a function that accepts any array, and returns a new array with the array values
+// that are greater than its 2nd value. Print how many values this is.
+// What will you do if the array is only one element long?
 
 function greaterThanSecond(arr){
 
-if(arr.length<=1){
-  return "Enter an array with 2 or more values";
+if(arr.length<=1){ // What will you do if the array is only one element long?
+  return "Enter an array with 2 or more values this array only has the following value: ["+arr+"]";
 }
 
 var arrcount = 0;
+var newArray = [];
   for(var i=0;i<arr.length;i++){
     if(arr[i]>arr[1]){
-      console.log(arr[i]+' is greater than '+arr[1] );
+      newArray.push(arr[i]);
       arrcount++;
+
     }
 
   }
 
-  return "total numbers greater than the 2nd value: " + arrcount;
+  return "new array ["+newArray + "] contains "+newArray.length+" values that are greater than the "+
+          "initial array's ["+arr+"] second value which is: "+arr[1];
 }
 
-var arrnew = [1,3,5,7,9,13];
+var arrnew = [1];
 
 console.log(greaterThanSecond(arrnew));
