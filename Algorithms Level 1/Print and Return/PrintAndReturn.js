@@ -6,7 +6,8 @@
 
 function printandreturn(arr){
   if(arr.length != 2){
-    console.log("Please pass an array with two numbers");
+    return "Please pass an array with two numbers";
+
   }
 
   console.log(arr[0]);
@@ -14,7 +15,7 @@ function printandreturn(arr){
 }
 
 
-var newArr =[1,2]
+var newArr =[2,1]
 
 var arr = printandreturn(newArr);
 console.log(arr);
