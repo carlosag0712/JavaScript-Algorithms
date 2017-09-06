@@ -9,19 +9,24 @@ function EvensAndOdds(arr){
 
   for(var i=0;i<arr.length;i++){
     if(arr[i]%2!=0 && arr[i+1]%2!=0 && arr[i+2]%2!=0){
-      return "That's odd";
+      console.log("That's odd");
     }
 
-    if (arr[i]%2==0 && arr[i+1]%2==0 && arr[i+2]%2==0) {
-      return "Even more so!";
+    else if (arr[i]%2==0 && arr[i+1]%2==0 && arr[i+2]%2==0) {
+      console.log("Even more so!");
     }
 
-    return 'no anomalies'
+    else{
+      console.log('no worries');
+    }
+
+
+
   }
 
 
 }
 
-var arr = [1,3,5,6,8,77,1,3,5,87,90];
+var arr = [1,1,3,6,8];
 
 console.log(EvensAndOdds(arr));
