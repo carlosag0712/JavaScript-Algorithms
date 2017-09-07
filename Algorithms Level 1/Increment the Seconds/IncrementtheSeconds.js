@@ -6,17 +6,14 @@ function increment2nd(arr) {
 
 for(var i=0; i<arr.length;i++){
 
-  if((arr.indexOf(arr[i]))%2!=0){
-    var index = arr.indexOf(arr[i])
-    var item = arr[index] + 2;
-    arr[i] = item
-    console.log(item);
+  if(i%2!=0){
+    arr[i] = arr[i]+1
     // console.log(arr[arr.indexOf(arr[i])]+1);
   }
 }
   return arr;
 }
 
-var arr = [1,2,3,4,5,6];
+var arr = [1,2,3,4];
 
 console.log(increment2nd(arr));
